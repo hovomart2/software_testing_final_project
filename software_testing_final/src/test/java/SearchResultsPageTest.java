@@ -24,7 +24,7 @@ public class SearchResultsPageTest extends BaseTest {
         String upTo = "1000";
         searchResultsPage.writePriceFromInput(from);
         searchResultsPage.writePriceUpToInput(upTo);
-        //need to scroll up a bit
+        searchResultsPage.scrollUp()
         searchResultsPage.clickOnSaleCheckbox();// for applying changes, as there was no submit button
         searchResultsPage.clickOnSaleCheckbox();
         searchResultsPage.setProductItems();

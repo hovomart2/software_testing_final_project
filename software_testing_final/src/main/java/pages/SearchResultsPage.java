@@ -121,6 +121,11 @@ public class SearchResultsPage {
         checkbox.click();
     }
 
+    public void scrollUp(){
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("window.scrollBy(0,-250)");
+    }
+
     public boolean isInRange(String fromStr, String upToStr){
         int from = Integer.parseInt(fromStr);
         int upTo = Integer.parseInt(upToStr);
